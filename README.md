@@ -16,5 +16,32 @@ Add this project to Visual Studio and run
 ![][pic3]
 
 [pic1]: https://i.gyazo.com/dd998a93ad8e46db59b84649a38d7d67.png
+[pic2]: https://imgur.com/QZNfGT1.jpg
+[pic3]: https://imgur.com/YwqaBvR.jpg
+
+## Release History
+
+* 1.0
+    * Initial upload
+
+## Meta
+
+* Authors:
+    * Zachary Reese
+
+Zachary Reese – zactreese@gmail.com
+
+Please do not copy or distribute my code without permission.
+
+[https://github.com/zacharyreese](https://github.com/zacharyreese/)
+
+## Contributing
+
+1. Fork it (<https://github.com/zacharyreese/NetworkScanner/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
+
 
 
