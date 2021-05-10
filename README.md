@@ -14,7 +14,8 @@ I have noticed that the original project is not fast enough to deal with a large
 In fact, I found it better to utilize hardware resources optimally by supporting parallel programming 🎯!
 
 **Time ⏰**
-I compared the time between the project in its original state and after my modification and added a stopwatch through programming⏱; To be a fairer comparison and of course in the same field of examination.
+
+I compared the time between the project in its original state and after my modification and added a stopwatch through programming ⏱ ; To be a fairer comparison and of course in the same field of examination.
 
 It may be shown as in the following pictures:
 
@@ -32,6 +33,9 @@ On the other hand in the same conditions, but this time after adding parallel pr
 
 This equals a 140.667% difference!
 You can verify yourself with the calculator or by using a site for the account such as [calculatorsoup](https://www.calculatorsoup.com/calculators/algebra/percent-difference-calculator.php)
+
+💻 Details of the two experiments on which there is a processor: CPU Intel(R) Core(TM) i7-8550U , It contains four cores and eight threads.
+
 
 To see the difference in the code, you can find me referring to it through the following comment:
 
@@ -74,11 +78,36 @@ It will be by separating it by calling this method
 
     public void invoke_to_list(string ipAddress, string host, string state)
 
+One of the important processes is to confirm a stage of invoke 
 
-#todo add pic and ref
+    if (listVAddr.InvokeRequired) { 
+    listVAddr.Invoke(new MethodInvoker(
+    delegate { listVAddr.Items.Add(item); 
+    item.Checked = true; }));
+
+
+The process illustration is similar to the separation that occurred in this image
+
+![alt text](https://i.stack.imgur.com/8k5kn.png
+ "Picture of UI thread with invoke")
+
+[More details on the problem and solutions of cross-thread exception](https://stackoverflow.com/questions/142003/cross-thread-operation-not-valid-control-accessed-from-a-thread-other-than-the)
+
+There are more additions in the comments in the codes like [here](https://github.com/MohammadYAmmar/NetworkScanner/blob/feature/parallelProgramming/NetworkScanner/Form1.cs)
+
+Soon I will add new features, so do not forget to follow the account and star to the repository  ✔🌟😁
+
+
+My GitHub:  
+[https://github.com/MohammadYAmmar](https://github.com/MohammadYAmmar)  
+My LinkedIn:  
+[https://www.linkedin.com/in/mohammad-y-ammar/](https://www.linkedin.com/in/mohammad-y-ammar/)
 
 This site is nice for writing description [stackedit](https://stackedit.io/)
+Clear steps for pull-request: [create a pull request in GitHub](https://opensource.com/article/19/7/create-pull-request-github)
 
+
+Thank you for reading all of this to benefit you instead of just copying and pasting ✂!
 
 **The part in which Mohammad Yaser Ammar wrote has ended**
 
