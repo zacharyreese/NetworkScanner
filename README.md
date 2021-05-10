@@ -2,7 +2,7 @@
 #  Network Scanner
 >Subnet scanner in C# that pings a given IP range
 
-This project is my desire to experience developing my skills and supporting open source projects, this is the first project that I have been working on fork in github!
+This project is my desire to experience developing my skills and supporting open source projects, this is the first project that I have been working on for Github!
 
 Project fork from: https://github.com/zacharyreese/NetworkScanner
 
@@ -30,8 +30,8 @@ On the other hand in the same conditions, but this time after adding parallel pr
 |--|--|
 | 102.2 s | 17.8 s |
 
-This equals 140.667% difference!
-You can verify yourself with the account or by using a site for the account such as [calculatorsoup](https://www.calculatorsoup.com/calculators/algebra/percent-difference-calculator.php)
+This equals a 140.667% difference!
+You can verify yourself with the calculator or by using a site for the account such as [calculatorsoup](https://www.calculatorsoup.com/calculators/algebra/percent-difference-calculator.php)
 
 To see the difference in the code, you can find me referring to it through the following comment:
 
@@ -53,18 +53,35 @@ What I mean is not to be satisfied with converting, for example from
 
     Parallel.For(startIP[3], endIP[3] +  1, (Inter, state) => 
     
-You must understand how to act with it, so where is the beginning and the end with it
+You must understand how to act with it, so where are the beginning and the end with it.
 
 2 - Overlapping incorrect values into the graphical interface
 
-As is well known, parallel programming uses the device's resources in a distributed manner. If we assume that your device contains 8 thread, it will perform 8 operations at the same time, but let's be realistic, the device usually performs other operations in the background. On the other hand, it is efficient by the increase in the processes that occur simultaneously instead of one process, the increase in time and the optimal consumption of the device's resources.
+As is well known, parallel programming uses the device's resources in a distributed manner. If we assume that your device contains 8 threads, it will perform 8 operations at the same time, but let's be realistic, the device usually performs other operations in the background. On the other hand, it is efficient by the increase in the processes that occur simultaneously instead of one process, the increase in time and the optimal consumption of the device's resources.
+
+The situation when dealing with the GUI is a little more difficult because there is **only one thread** for it. As shown in this picture: 
+
+![alt text](https://i.stack.imgur.com/6MtB3.png
+ "Picture of UI thread")
+
+Therefore, we must solve this problem, which may appear as a cross-thread exception or overlap between values, and thus the program will become untrustworthy, or at least information without values will appear to us.
+
+The solution I have implemented is to separate the GUI handling into a separate method, Instead of adding to listview directly via the following code:
+
+    //listVAddr.Items.Add(new ListViewItem(new String[] { ipAddress, host.HostName, "Up" })); //Log successful pings
+
+It will be by separating it by calling this method
+
+    public void invoke_to_list(string ipAddress, string host, string state)
 
 
-
-
-
+#todo add pic and ref
 
 This site is nice for writing description [stackedit](https://stackedit.io/)
+
+
+**The part in which Mohammad Yaser Ammar wrote has ended**
+
 
 
 ## Description of the original project without modification:
