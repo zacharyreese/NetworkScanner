@@ -1,3 +1,4 @@
+
 #  Network Scanner
 >Subnet scanner in C# that pings a given IP range
 
@@ -18,9 +19,11 @@ I compared the time between the project in its original state and after my modif
 It may be shown as in the following pictures:
 
 In this picture, the experiment is illustrated by functional programming to the range of 15 test devices, and it took 102.2 seconds to finish
+
 ![alt text](https://github.com/MohammadYAmmar/NetworkScanner/blob/feature/parallelProgramming/Picture%20of%20functional%20programming.png "Picture of functional programming")
 
 On the other hand in the same conditions, but this time after adding parallel programming, it took only 17.8 seconds to finish!
+
 ![alt text](https://github.com/MohammadYAmmar/NetworkScanner/blob/feature/parallelProgramming/Picture%20of%20parallel%20programming.png "Picture of parallel programming")
 
 | Functional | Parallel |
@@ -38,7 +41,24 @@ Some of the things that were in the original and amended were indicated through 
 
     //Old
 
-I will complete the rest of the details tonight, God willing, Ramadan Kareem 🌙
+# Parallel programming stability factors:
+These factors are from my experiences with several projects
+
+1 - Correct conversion for parallel programming
+What I mean is not to be satisfied with converting, for example from
+
+    for (int y = startIP[3]; y <= 255; y++) { //4th octet loop
+   to 
+   
+
+    Parallel.For(startIP[3], endIP[3] +  1, (Inter, state) => 
+    
+You must understand how to act with it, so where is the beginning and the end with it
+
+2 - Overlapping incorrect values into the graphical interface
+
+As is well known, parallel programming uses the device's resources in a distributed manner. If we assume that your device contains 8 thread, it will perform 8 operations at the same time, but let's be realistic, the device usually performs other operations in the background. On the other hand, it is efficient by the increase in the processes that occur simultaneously instead of one process, the increase in time and the optimal consumption of the device's resources.
+
 
 
 
