@@ -1,3 +1,54 @@
+#  Network Scanner
+>Subnet scanner in C# that pings a given IP range
+
+This project is my desire to experience developing my skills and supporting open source projects, this is the first project that I have been working on fork in github!
+
+Project fork from: https://github.com/zacharyreese/NetworkScanner
+
+
+# Improvements
+
+**Add parallel programming**
+I have noticed that the original project is not fast enough to deal with a large number of servers or devices in general, as it passes successively through checks on a particular device and then the other like this.
+In fact, I found it better to utilize hardware resources optimally by supporting parallel programming 🎯!
+
+**Time ⏰**
+I compared the time between the project in its original state and after my modification and added a stopwatch through programming⏱; To be a fairer comparison and of course in the same field of examination.
+
+It may be shown as in the following pictures:
+
+In this picture, the experiment is illustrated by functional programming to the range of 15 test devices, and it took 102.2 seconds to finish
+![alt text](https://github.com/MohammadYAmmar/NetworkScanner/blob/feature/parallelProgramming/Picture%20of%20functional%20programming.png "Picture of functional programming")
+
+On the other hand in the same conditions, but this time after adding parallel programming, it took only 17.8 seconds to finish!
+![alt text](https://github.com/MohammadYAmmar/NetworkScanner/blob/feature/parallelProgramming/Picture%20of%20parallel%20programming.png "Picture of parallel programming")
+
+| Functional | Parallel |
+|--|--|
+| 102.2 s | 17.8 s |
+
+This equals 140.667% difference!
+You can verify yourself with the account or by using a site for the account such as [calculatorsoup](https://www.calculatorsoup.com/calculators/algebra/percent-difference-calculator.php)
+
+To see the difference in the code, you can find me referring to it through the following comment:
+
+    //New by: Mohammad Yaser Ammar
+    
+Some of the things that were in the original and amended were indicated through a comment
+
+    //Old
+
+I will complete the rest of the details tonight, God willing, Ramadan Kareem 🌙
+
+
+
+
+
+This site is nice for writing description [stackedit](https://stackedit.io/)
+
+
+## Description of the original project without modification:
+
 # Network Scanner
 >Subnet scanner in C# that pings a given IP range
 
