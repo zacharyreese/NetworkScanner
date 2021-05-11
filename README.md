@@ -27,12 +27,14 @@ On the other hand in the same conditions, but this time after adding parallel pr
 
 ![alt text](https://github.com/MohammadYAmmar/NetworkScanner/blob/feature/parallelProgramming/Picture%20of%20parallel%20programming.png "Picture of parallel programming")
 
+This table shows the time difference
+
 | Functional | Parallel |
 |--|--|
 | 102.2 s | 17.8 s |
 
 This equals a 140.667% difference!
-You can verify yourself with the calculator or by using a site for the account such as [calculatorsoup](https://www.calculatorsoup.com/calculators/algebra/percent-difference-calculator.php)
+You can verify yourself with the calculator or by using a site for the calculation such as [calculatorsoup](https://www.calculatorsoup.com/calculators/algebra/percent-difference-calculator.php)
 
 💻 Details of the two experiments on which there is a processor: CPU Intel(R) Core(TM) i7-8550U , It contains four cores and eight threads.
 
@@ -95,7 +97,7 @@ The process illustration is similar to the separation that occurred in this imag
 
 There are more additions in the comments in the codes like [here](https://github.com/MohammadYAmmar/NetworkScanner/blob/feature/parallelProgramming/NetworkScanner/Form1.cs)
 
-Soon I will add new features, so do not forget to follow the account and star to the repository  ✔🌟😁
+Soon I will add new features and fix the stop button, so do not forget to follow the account and star to the repository  ✔🌟😁
 
 
 My GitHub:  
