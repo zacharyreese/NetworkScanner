@@ -1,7 +1,7 @@
 # Network Scanner
 >Subnet scanner in C# that pings a given IP range
 
-This was my final project for my Computer Security Course (CSCI 5431). I developed this application using Visual Studio. This project exposed a severe security flaw in the Georgia Southern University network, where I was able to ping the IP range of the University, and access very sensitive data that was not properly secured such as University databases, donor excel files, GSU police department body cam library and arrest records, and many other critical data. I was able to gain access and create, edit, and potentially delete this data. After creating a report on what I had discovered, I went to the university to present my findings. After presenting, I worked with the top IT and CS administrators of the school's network to make sure that the exposed machines were properly secured so that this type of security vulnerability would be closed.
+This was my final project for my Computer Security Course (CSCI 5431). I developed this application using Visual Studio. This project exposed a severe security flaw in my University network, where I was able to ping the IP range of the University, and access very sensitive data that was not properly secured such as University databases, donor excel files, police department body cam library and arrest records, and many other critical data. I was able to gain access and create, edit, and potentially delete this data. After creating a report on what I had discovered, I went to the university to present my findings. After presenting, I worked with the top IT and CS administrators of the school's network to make sure that the exposed machines were properly secured so that this type of security vulnerability would be closed.
 
 ## Usage
 
@@ -30,8 +30,6 @@ Add this project to Visual Studio and run
     * Zachary Reese
 
 Zachary Reese – zactreese@gmail.com
-
-Please do not copy or distribute my code without permission.
 
 [https://github.com/zacharyreese](https://github.com/zacharyreese/)
 
